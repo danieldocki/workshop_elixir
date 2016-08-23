@@ -1,7 +1,7 @@
 defmodule FibonacciTest do
   use ExUnit.Case
   import Fibonacci
-  
+
   test "fibonacci" do
     assert fib(0) == []
     assert fib(1) == [0]
