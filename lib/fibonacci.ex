@@ -15,7 +15,7 @@ defmodule Fibonacci do
     fib(@seed, n - 2)
   end
 
-  def fib(acc, 0), do: Enum.reverse(acc)
+  def fib(acc, 0), do: acc
 
   def fib([first, second | _] = lst, n) do
     fib([first + second | lst], n - 1)
